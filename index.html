@@ -16,28 +16,40 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Melbourne</h1>
-          <p>
-            Thursday 19:32p, rainy <br />
-            Humidity: 80%, Wind: 7.18km/h
-          </p>
-          🌧️ 27°C
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Melbourne</h1>
+            <p class="weather-app-details">
+              Thursday 19:32, rainy <br />
+              Humidity: <strong>80%</strong>, Wind: <strong>7.18km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌧️</div>
+            <div class="weather-app-temperature">27</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
       </main>
       <footer>
-        Coded by
+        Coded with 💛 by
         <a
           href="https://www.shecodes.io/graduates/83736-aditi-rajgopalhttps://www.shecodes.io/graduates/83736-aditi-rajgopal"
           >Aditi Rajgopal</a
-        >, is <a href="https://github.com/strawberrysmile16/Weather"></a> on
-        GitHub and hosted on<a href="https://www.netlify.com/"> Netlify</a>
+        >, is open-sourced on
+        <a href="https://github.com/strawberrysmile16/Weather"> GitHub</a> and
+        hosted on <a href="https://www.netlify.com/"> Netlify</a>
       </footer>
     </div>
   </body>
